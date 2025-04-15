@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <meta name="description" content="Business Plan de Legatio Finance - Découvrez notre stratégie pour un écosystème blockchain avec NFTs uniques sur OpenSea/Magic Eden et $LEG via airdrop en 2026 sur Arbitrum.">
-    <meta name="keywords" content="NFTs, $LEG, utility token, blockchain, Legatio Finance, staking, gouvernance, DeFi, Arbitrum, OpenSea, Magic Eden, airdrop">
+    <meta name="description" content="Business Plan de Legatio Finance - Leader de la tokenisation d'actifs réels (RWA). Découvrez notre stratégie pour tokeniser l’immobilier via fonds thématiques, NFTs Genesis, et airdrop $LEG en 2026.">
+    <meta name="keywords" content="tokenisation RWA, immobilier durable, fonds tokenisés, NFTs immobiliers, Legatio Finance, blockchain, $LEG, airdrop, Arbitrum, OpenSea, Club Legatio, Legatio Academy">
     <meta name="author" content="Legatio Finance Team">
     <meta name="robots" content="index, follow">
-    <meta property="og:title" content="Legatio Finance Business Plan">
-    <meta property="og:description" content="Legatio Finance : Collectionnez des NFTs sur OpenSea et Magic Eden, et recevez des $LEG via airdrop en 2026 sur Arbitrum.">
+    <meta property="og:title" content="Legatio Finance Business Plan - Tokenisation RWA">
+    <meta property="og:description" content="Legatio Finance : Tokenisez l’immobilier avec nos fonds thématiques, NFTs Genesis (500K-850K €), et $LEG via airdrop en 2026.">
     <meta property="og:image" content="https://delmarcrypto.github.io/legatio.finance/images/og-image.jpg">
     <meta property="og:url" content="https://delmarcrypto.github.io/legatio.finance/businessplan.html">
     <meta property="og:type" content="article">
@@ -20,6 +20,276 @@
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
+    <style>
+        :root {
+            --primary: #FFD700;
+            --background: #0A0A0A;
+            --text: #FFFFFF;
+            --button-bg: #1A1A1A;
+            --button-text: #FFD700;
+            --hover-dark: #FFBF00;
+            --accent-gold: #FFE066;
+            --glow: 0 0 10px #FFD700, 0 0 20px #FFD700, 0 0 30px #FFE066;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Orbitron', sans-serif;
+            background: url('https://www.transparenttextures.com/patterns/stardust.png') repeat, linear-gradient(135deg, #0A0A0A 0%, #1A1A1A 100%);
+            color: var(--text);
+            position: relative;
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(255, 215, 0, 0.2) 0%, transparent 70%);
+            opacity: 0.3;
+            z-index: -1;
+        }
+
+        .navbar {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .navbar .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .navbar .logo-text {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-shadow: var(--glow);
+            text-decoration: none;
+        }
+
+        .navbar ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .navbar a {
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover,
+        .navbar a:focus {
+            color: var(--primary);
+            outline: none;
+        }
+
+        .header {
+            padding: 5rem 1rem;
+            text-align: center;
+            background: url('https://delmarcrypto.github.io/legatio.finance/images/hero-bg.jpg') no-repeat center/cover;
+        }
+
+        .header-content h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-shadow: var(--glow);
+            animation: glow 2s infinite;
+        }
+
+        .header-content p {
+            font-size: 1.8rem;
+            font-weight: 400;
+            margin: 1.5rem 0;
+        }
+
+        @keyframes glow {
+            0% { text-shadow: var(--glow); }
+            50% { text-shadow: 0 0 5px #FFD700, 0 0 10px #FFE066; }
+            100% { text-shadow: var(--glow); }
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .section {
+            padding: 3rem 0;
+        }
+
+        .section h2 {
+            text-align: center;
+            color: var(--primary);
+            text-shadow: var(--glow);
+            animation: glow 2s infinite;
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+        }
+
+        .section h3 {
+            color: var(--accent-gold);
+            margin: 1.5rem 0 1rem;
+            font-size: 1.8rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: var(--button-bg);
+            color: var(--button-text);
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 500;
+            transition: background 0.3s, transform 0.3s;
+            margin: 0.5rem;
+        }
+
+        .cta-button:hover,
+        .cta-button:focus {
+            background: var(--hover-dark);
+            transform: scale(1.05);
+            outline: none;
+        }
+
+        ul {
+            list-style: none;
+            margin: 1rem 0;
+        }
+
+        ul li {
+            margin: 0.5rem 0;
+            font-size: 1.1rem;
+        }
+
+        ul li i {
+            color: var(--accent-gold);
+            margin-right: 0.5rem;
+        }
+
+        .table-container {
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #1A1A1A;
+            border-radius: 12px;
+        }
+
+        th, td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        th {
+            background: #2A2A2A;
+            color: var(--primary);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .grid-item {
+            background: #1A1A1A;
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .grid-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+        }
+
+        .grid-item img {
+            max-width: 100%;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+        }
+
+        .footer {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 2rem;
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: var(--hover-dark);
+        }
+
+        .social-links a {
+            color: var(--text);
+            margin: 0 1rem;
+            font-size: 1.8rem;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: var(--primary);
+        }
+
+        @media (max-width: 768px) {
+            .navbar ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+
+            .navbar .logo-text {
+                font-size: 1.5rem;
+            }
+
+            .header-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .header-content p {
+                font-size: 1.3rem;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
     <header class="navbar">
@@ -29,7 +299,11 @@
             </a>
             <ul>
                 <li><a href="#marche">Marché</a></li>
-                <li><a href="#modele">Modèle Économique</a></li>
+                <li><a href="#rwa">RWA</a></li>
+                <li><a href="#funds">Fonds</a></li>
+                <li><a href="#nfts">NFTs</a></li>
+                <li><a href="#ecosystem">Écosystème</a></li>
+                <li><a href="#modele">Modèle</a></li>
                 <li><a href="#roadmap">Roadmap</a></li>
                 <li><a href="#croissance">Croissance</a></li>
                 <li><a href="#investir">Investir</a></li>
@@ -41,274 +315,248 @@
         <section class="header" id="start">
             <div class="header-content">
                 <h1>Business Plan - Legatio Finance</h1>
-                <p>Un écosystème blockchain avec NFTs sur OpenSea/Magic Eden et $LEG via airdrop en 2026</p>
+                <p>Tokenisez l’avenir : Leader de la tokenisation d’actifs réels (RWA)</p>
                 <a href="#marche" class="cta-button" aria-label="Explorer le Business Plan">Explorer le Plan</a>
             </div>
         </section>
 
         <div class="container">
             <section class="section" id="marche">
-                <h2>1. Le Marché des NFTs et Utility Tokens</h2>
-                <p>Le marché des NFTs et de la DeFi sur Layer 2 représente une opportunité massive, avec une croissance exponentielle attendue.</p>
-                <p>En 2024, le marché des NFTs atteint 40 milliards de dollars, selon DappRadar.</p>
-                <p><strong>Legatio</strong> se positionne en leader en combinant des NFTs uniques ("Legatio Genesis") sur OpenSea et Magic Eden, et un utility token ($LEG) distribué via airdrop en 2026 sur Arbitrum, offrant accessibilité et engagement communautaire.</p>
-                <p><strong>Notre mission</strong> : Rendre la DeFi interactive et accessible dès 0.05 ETH (~100 $), grâce à la blockchain.</p>
-                <h3>Pourquoi investir dans Legatio ?</h3>
+                <h2>1. Le Marché Immobilier et RWA</h2>
+                <p>Le marché immobilier mondial (326T$, Statista 2023) est inaccessible pour beaucoup : coûts élevés, faible liquidité, rendements stagnants.</p>
+                <p><strong>Opportunité Web3</strong> : La tokenisation RWA croît de 2B$ (2024) à 16B$ (2030, BCG).</p>
                 <ul>
-                    <li>Marché en pleine explosion : Les NFTs et la DeFi sur Layer 2 transforment l’engagement blockchain.</li>
-                    <li>Technologie robuste et sécurité avancée : Utilisation d’Arbitrum, audits Hacken, programme de bug bounty via Immunefi.</li>
-                    <li>Régulation intégrée : KYC léger, conformité MiCA.</li>
-                    <li>Partenariats stratégiques : Collaborations avec LBank, Chainlink, Rarible, Stepn, OpenSea, et Magic Eden.</li>
-                    <li>Opportunité d’investissement unique : Un modèle scalable et une forte adoption communautaire.</li>
-                    <li>Avantage concurrentiel fort : Accessibilité dès 0.05 ETH et airdrop pour une adoption massive.</li>
+                    <li><i class="fas fa-globe"></i> Cible : Retail Web3 (10M wallets), family offices, fonds ESG.</li>
+                    <li><i class="fas fa-chart-line"></i> Croissance : +50% annuel pour RWA (McKinsey).</li>
+                    <li><i class="fas fa-lock-open"></i> Régulation : MiCA (UE) soutient les tokens RWA.</li>
                 </ul>
-                <p><strong>Besoins en financement</strong> : 3 millions de dollars pour le développement, l’acquisition clients, et le renforcement des partenariats stratégiques.</p>
+                <p><strong>Legatio</strong> : Leader RWA avec fonds thématiques, NFTs immobiliers, et $LEG via airdrop en 2026 sur Arbitrum.</p>
+                <h3>Pourquoi investir ?</h3>
+                <ul>
+                    <li><i class="fas fa-rocket"></i> Marché explosif : 16B$ RWA d’ici 2030.</li>
+                    <li><i class="fas fa-shield-alt"></i> Sécurité : Audits Hacken, conformité MiCA.</li>
+                    <li><i class="fas fa-users"></i> Accessibilité : Dès 0.015 ETH via NFTs.</li>
+                    <li><i class="fas fa-handshake"></i> Partenaires : SEBA, Nexity, OpenSea.</li>
+                </ul>
             </section>
 
-            <section class="section" id="analyse">
-                <h2>2. Analyse du Marché</h2>
-                <h3>Tendances et Opportunités</h3>
+            <section class="section" id="rwa">
+                <h2>2. Tokenisation RWA</h2>
+                <p>Legatio fractionne l’immobilier en tokens sur blockchain :</p>
                 <ul>
-                    <li>Croissance des NFTs : Croissance annuelle de <strong>50%</strong> (2023-2024).</li>
-                    <li>Adoption Layer 2 : Arbitrum traite plus de 1 million $ de transactions par jour.</li>
-                    <li>Projets similaires : Axie Infinity et Stepn ont levé 3-5 M$ avec des modèles NFT/utility token.</li>
-                    <li>Réglementation favorable : MiCA soutient les utility tokens en Europe.</li>
+                    <li><i class="fas fa-cube"></i> Accessibilité : Investissez dès 0.015 ETH.</li>
+                    <li><i class="fas fa-sync-alt"></i> Liquidité : Échangez sur OpenSea (NFTs).</li>
+                    <li><i class="fas fa-chart-line"></i> Rendements : 5-8% annuels estimés (fonds).</li>
                 </ul>
-                <h3>Concurrence & Différenciation</h3>
+                <p>Différenciation : Fonds thématiques, écosystème (Simulateur, Academy, Club), et conformité juridique.</p>
+            </section>
+
+            <section class="section" id="funds">
+                <h2>3. Fonds Thématiques</h2>
+                <p>Investissez dans des actifs réels diversifiés :</p>
+                <div class="grid">
+                    <div class="grid-item">
+                        <i class="fas fa-city fa-3x"></i>
+                        <h3>Urban Growth Fund</h3>
+                        <p>Propriétés durables (Lisbonne, Miami).</p>
+                    </div>
+                    <div class="grid-item">
+                        <i class="fas fa-gem fa-3x"></i>
+                        <h3>Gold-Backed Fund</h3>
+                        <p>Actifs adossés à l’or.</p>
+                    </div>
+                    <div class="grid-item">
+                        <i class="fas fa-home fa-3x"></i>
+                        <h3>Social Housing Fund</h3>
+                        <p>Logements sociaux à impact.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="nfts">
+                <h2>4. NFTs Legatio Genesis</h2>
+                <p>6 650 NFTs immobiliers financent notre MVP :</p>
                 <div class="table-container">
                     <table>
                         <thead>
                             <tr>
-                                <th>Critères</th>
-                                <th>Legatio</th>
-                                <th>Axie Infinity</th>
-                                <th>Rarible</th>
-                                <th>Stepn</th>
+                                <th>Type</th>
+                                <th>Quantité</th>
+                                <th>Prix (ETH)</th>
+                                <th>Total (ETH)</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>NFTs Uniques</td>
-                                <td>✓</td>
-                                <td>✓</td>
-                                <td>✓</td>
-                                <td>✓</td>
+                                <td>City Pod</td>
+                                <td>3 000</td>
+                                <td>0.015</td>
+                                <td>45</td>
                             </tr>
                             <tr>
-                                <td>Utility Token</td>
-                                <td>✓ (via airdrop)</td>
-                                <td>✓</td>
-                                <td>×</td>
-                                <td>✓</td>
+                                <td>Urban Nest</td>
+                                <td>2 000</td>
+                                <td>0.03</td>
+                                <td>60</td>
                             </tr>
                             <tr>
-                                <td>Accessibilité (dès 0.05 ETH)</td>
-                                <td>✓</td>
-                                <td>×</td>
-                                <td>×</td>
-                                <td>×</td>
+                                <td>Suburban Haven</td>
+                                <td>1 000</td>
+                                <td>0.05</td>
+                                <td>50</td>
                             </tr>
                             <tr>
-                                <td>Blockchain utilisée</td>
-                                <td>Arbitrum</td>
-                                <td>Ronin</td>
-                                <td>Multi-chain</td>
-                                <td>Solana</td>
+                                <td>Azure Prestige</td>
+                                <td>500</td>
+                                <td>0.1</td>
+                                <td>50</td>
+                            </tr>
+                            <tr>
+                                <td>Sky Crown</td>
+                                <td>100</td>
+                                <td>0.25</td>
+                                <td>25</td>
+                            </tr>
+                            <tr>
+                                <td>Eternal Estate</td>
+                                <td>50</td>
+                                <td>1</td>
+                                <td>50</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-                <h3>Validation du Marché</h3>
-                <p>Exemple concret : En 2021, Stepn a levé 5 M$ avec un modèle NFT/utility token. Cela démontre une forte traction du marché et la demande croissante pour des écosystèmes accessibles.</p>
-                <p>Legatio va plus loin avec une accessibilité optimisée, une stratégie de minimisation des coûts (listings gratuits, marketing organique), et un focus communautaire via airdrop.</p>
+                <p>Levée : 500K-850K € (280 ETH). Vente : Q2-Q3 2025.</p>
+            </section>
+
+            <section class="section" id="ecosystem">
+                <h2>5. Écosystème Legatio</h2>
+                <div class="grid">
+                    <div class="grid-item">
+                        <i class="fas fa-calculator fa-3x"></i>
+                        <h3>Simulateur RWA</h3>
+                        <p>Rendements en temps réel.</p>
+                    </div>
+                    <div class="grid-item">
+                        <i class="fas fa-graduation-cap fa-3x"></i>
+                        <h3>Legatio Academy</h3>
+                        <p>Formations RWA/blockchain.</p>
+                    </div>
+                    <div class="grid-item">
+                        <i class="fas fa-crown fa-3x"></i>
+                        <h3>Club Legatio</h3>
+                        <p>Deals exclusifs, NFTs VIP.</p>
+                    </div>
+                    <div class="grid-item">
+                        <i class="fas fa-coins fa-3x"></i>
+                        <h3>Airdrop $LEG</h3>
+                        <p>Gouvernance, staking (Q1 2026).</p>
+                    </div>
+                </div>
             </section>
 
             <section class="section" id="modele">
-                <h2>3. Modèle Économique</h2>
-                <h3>Sources de Revenus</h3>
+                <h2>6. Modèle Économique</h2>
+                <h3>Revenus</h3>
                 <ul>
-                    <li>Frais sur ventes secondaires : 2% sur les échanges de NFTs "Legatio Genesis" via OpenSea/Magic Eden.</li>
-                    <li>Staking : Récompenses $LEG pour la participation active (après airdrop en 2026).</li>
-                    <li>Partenariats stratégiques : Collaborations avec OpenSea, Magic Eden, MEXC, Gate.io (listings gratuits).</li>
+                    <li><i class="fas fa-percentage"></i> Fonds RWA : 1-2% frais de gestion.</li>
+                    <li><i class="fas fa-coins"></i> NFTs : 2% sur ventes secondaires.</li>
+                    <li><i class="fas fa-lock"></i> Staking $LEG : Récompenses post-airdrop.</li>
                 </ul>
-                <h3>Rentabilité et Projections</h3>
-                <p>Seuil de rentabilité atteint avec 25 M$ de Total Value Locked (TVL).</p>
-                <p>Revenus prévus d'ici 2028 : 10 M$ avec un EBITDA de 40%.</p>
-                <div class="table-container">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Scénario</th>
-                                <th>TVL</th>
-                                <th>Revenus</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Pessimiste</td>
-                                <td>10 M$</td>
-                                <td>2 M$</td>
-                            </tr>
-                            <tr>
-                                <td>Réaliste</td>
-                                <td>50 M$</td>
-                                <td>10 M$</td>
-                            </tr>
-                            <tr>
-                                <td>Optimiste</td>
-                                <td>100 M$</td>
-                                <td>20 M$</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <h3>3.1. Lancement des NFTs "Legatio Genesis"</h3>
-                <p>Processus en 3 étapes :</p>
+                <h3>Levée Intermédiaire</h3>
                 <ul>
-                    <li>Création : Génération de 10 000 NFTs uniques sur Arbitrum.</li>
-                    <li>Vente : Accessible dès 0.05 ETH (~100 $) sur OpenSea et Magic Eden.</li>
-                    <li>Marché secondaire : Échange sur OpenSea et Magic Eden avec 2% de frais.</li>
-                </ul>
-                <h3>3.2. Revenus et Staking des Tokens $LEG</h3>
-                <ul>
-                    <li>Récompenses $LEG pour les détenteurs de NFTs via staking (après airdrop).</li>
-                    <li>Gouvernance : Votes via la DAO pour les détenteurs (post-airdrop).</li>
-                    <li>Bonus : Détenteurs de NFTs reçoivent des $LEG supplémentaires via l'airdrop.</li>
-                </ul>
-                <h3>3.3. Utilisation des Fonds Collectés (3M$)</h3>
-                <ul>
-                    <li><strong>40%</strong> : Développement des smart contracts, NFTs, audit Hacken (~10 000 $), programme de bug bounty (~5 000 $).</li>
-                    <li><strong>40%</strong> : Marketing organique et acquisition d’utilisateurs (concours, giveaways).</li>
-                    <li><strong>20%</strong> : Opérations et conformité légère (MiCA).</li>
+                    <li><i class="fas fa-coins"></i> 500K-850K € via NFTs (280 ETH).</li>
+                    <li><i class="fas fa-chart-pie"></i> Allocation : 60% MVP, 20% équipe, 15% marketing, 5% réserve.</li>
+                    <li><i class="fas fa-bullseye"></i> Levée VC : 3-5M € post-MVP (Q1 2026).</li>
                 </ul>
             </section>
 
             <section class="section" id="roadmap">
-                <h2>4. Roadmap & Scalabilité</h2>
-                <div class="table-container">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Phase</th>
-                                <th>Objectif</th>
-                                <th>Délai</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Lancement</td>
-                                <td>Lancement des NFTs sur OpenSea/Magic Eden, marketing organique</td>
-                                <td>Q2 2025</td>
-                            </tr>
-                            <tr>
-                                <td>Préparation Airdrop</td>
-                                <td>Finalisation des 10 000 NFTs, snapshot, audit Hacken</td>
-                                <td>Q3 2025</td>
-                            </tr>
-                            <tr>
-                                <td>Teasing</td>
-                                <td>Teasing de l'airdrop, candidature pour listings gratuits</td>
-                                <td>Q4 2025</td>
-                            </tr>
-                            <tr>
-                                <td>Airdrop & Staking</td>
-                                <td>Airdrop de $LEG, listing DEX/CEX, staking</td>
-                                <td>Q1 2026</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <h2>7. Roadmap 2025-2030</h2>
+                <div class="grid">
+                    <div class="grid-item">
+                        <h3>Q3 2025</h3>
+                        <p>Lancement fonds, snapshot $LEG.</p>
+                    </div>
+                    <div class="grid-item">
+                        <h3>Q1 2026</h3>
+                        <p>Airdrop $LEG, staking, expansion EU.</p>
+                    </div>
+                    <div class="grid-item">
+                        <h3>2027</h3>
+                        <p>50 immeubles tokenisés, Summit.</p>
+                    </div>
+                    <div class="grid-item">
+                        <h3>2030</h3>
+                        <p>1B$ RWA, top 3 mondial.</p>
+                    </div>
                 </div>
-                <h3>Scalabilité</h3>
-                <ul>
-                    <li>Expansion des partenariats avec d'autres marketplaces NFT.</li>
-                    <li>Introduction de nouvelles catégories de NFTs.</li>
-                    <li>Intégration avec d'autres Layer 2 (ex. Polygon) à long terme.</li>
-                </ul>
-            </section>
-
-            <section class="section" id="securite">
-                <h2>5. Sécurité et Régulation</h2>
-                <h3>Gestion des Risques</h3>
-                <ul>
-                    <li>Sécurisation des smart contracts : Audits Hacken et programme de bug bounty via Immunefi.</li>
-                    <li>Protection des utilisateurs : Transparence et audits publics.</li>
-                </ul>
-                <h3>Conformité Réglementaire</h3>
-                <ul>
-                    <li>KYC léger pour l'airdrop.</li>
-                    <li>Conformité avec MiCA (UE).</li>
-                    <li>Collaboration avec des experts juridiques DeFi.</li>
-                    <li>Respect des normes de sécurité blockchain.</li>
-                </ul>
             </section>
 
             <section class="section" id="croissance">
-                <h2>6. Modèle de Croissance et Besoins en Financement</h2>
+                <h2>8. Croissance & Projections</h2>
+                <h3>Projections Financières</h3>
                 <div class="table-container">
                     <table>
                         <thead>
                             <tr>
                                 <th>Année</th>
-                                <th>TVL (Total Value Locked)</th>
-                                <th>Revenus</th>
-                                <th>EBITDA</th>
+                                <th>RWA Tokenisés (€)</th>
+                                <th>Revenus (€)</th>
+                                <th>EBITDA (€)</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>2026</td>
-                                <td>5 M$</td>
-                                <td>1 M$</td>
-                                <td>0.2 M$</td>
+                                <td>10M</td>
+                                <td>200K</td>
+                                <td>50K</td>
                             </tr>
                             <tr>
                                 <td>2027</td>
-                                <td>25 M$</td>
-                                <td>5 M$</td>
-                                <td>2 M$</td>
+                                <td>50M</td>
+                                <td>1M</td>
+                                <td>400K</td>
                             </tr>
                             <tr>
-                                <td>2028</td>
-                                <td>50 M$</td>
-                                <td>10 M$</td>
-                                <td>4 M$</td>
+                                <td>2030</td>
+                                <td>1B</td>
+                                <td>20M</td>
+                                <td>8M</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-                <h3>Utilisation des Fonds Levés (3M$)</h3>
+                <h3>Stratégie de Croissance</h3>
                 <ul>
-                    <li>1.2M$ : Développement des smart contracts, NFTs, audit Hacken, bug bounty.</li>
-                    <li>1.2M$ : Marketing organique et acquisition clients.</li>
-                    <li>0.6M$ : Opérations et conformité légère.</li>
-                </ul>
-            </section>
-
-            <section class="section" id="sortie">
-                <h2>7. Stratégie de Sortie pour Investisseurs</h2>
-                <ul>
-                    <li>Revente des $LEG sur des DEX/CEX (Uniswap, MEXC, Gate.io).</li>
-                    <li>Buyback par Legatio avec des fonds communautaires.</li>
-                    <li>Acquisition par un acteur majeur de la DeFi ou du marché NFT.</li>
-                    <li>Fusion avec un projet NFT ou DeFi leader.</li>
+                    <li><i class="fas fa-users"></i> Communauté : 10K membres (Q3 2025).</li>
+                    <li><i class="fas fa-handshake"></i> Partenariats : SEBA, Nexity pour crédibilité.</li>
+                    <li><i class="fas fa-rocket"></i> Expansion : Europe (2026), Asie (2028).</li>
                 </ul>
             </section>
 
             <section class="section" id="investir">
-                <h2>8. Pourquoi Investir dans Legatio ?</h2>
+                <h2>9. Pourquoi Investir ?</h2>
                 <ul>
-                    <li>Marché NFT et utility tokens : 40 B$ aujourd’hui, croissance exponentielle prévue.</li>
-                    <li>Stratégie de minimisation des coûts : Listings gratuits, marketing organique.</li>
-                    <li>Accessibilité dès 0.05 ETH et airdrop pour une adoption massive.</li>
-                    <li>Équipe de 5 experts, extensible à 8 avec la levée, forte en blockchain et DeFi.</li>
+                    <li><i class="fas fa-globe"></i> Marché RWA : 16B$ d’ici 2030.</li>
+                    <li><i class="fas fa-cube"></i> Produit : Fonds, NFTs, écosystème unique.</li>
+                    <li><i class="fas fa-shield-alt"></i> Sécurité : Audits, conformité MiCA.</li>
+                    <li><i class="fas fa-star"></i> Vision : 1B$ RWA, top 3 mondial.</li>
                 </ul>
-                <p>Intéressé ? <a href="mailto:invest@legatio.finance">Contactez-nous</a> pour plus d'informations.</p>
+                <h3>Sortie Investisseurs</h3>
+                <ul>
+                    <li><i class="fas fa-exchange-alt"></i> Revente $LEG sur DEX/CEX.</li>
+                    <li><i class="fas fa-hand-holding-usd"></i> Buyback par Legatio (fonds RWA).</li>
+                    <li><i class="fas fa-building"></i> Acquisition par un acteur immobilier/Web3.</li>
+                </ul>
+                <p><a href="mailto:invest@legatio.finance" class="cta-button">Contactez-nous</a></p>
             </section>
 
             <section class="section" id="conclusion">
-                <h2>Conclusion</h2>
-                <p>Legatio révolutionne la DeFi avec un écosystème combinant NFTs uniques sur OpenSea/Magic Eden et $LEG via airdrop. Avec une stratégie de minimisation des coûts et une communauté engagée, nous visons 50 M$ TVL d’ici 2028.</p>
-                <p><strong>Rejoignez-nous dans cette révolution blockchain.</strong></p>
+                <h2>10. Conclusion</h2>
+                <p>Legatio Finance révolutionne l’immobilier via la tokenisation RWA. Avec nos fonds thématiques, NFTs Genesis, et un écosystème premium, nous visons 1B$ d’actifs tokenisés d’ici 2030. Rejoignez l’empire Legatio.</p>
+                <a href="https://delmarcrypto.github.io/legatio.finance/" class="cta-button" target="_blank" rel="noopener noreferrer">Visiter le Site</a>
             </section>
         </div>
     </main>
@@ -321,7 +569,7 @@
             </div>
             <p>Contact : <a href="mailto:legatio.finance@gmail.com">legatio.finance@gmail.com</a></p>
             <p>© 2025 Legatio Finance. Tous droits réservés.</p>
-            <a href="#start" class="back-to-top" aria-label="Retour en haut de la page"><i class="fas fa-arrow-up"></i> Retour en haut</a>
+            <a href="#start" class="back-to-top" aria-label="Retour en haut"><i class="fas fa-arrow-up"></i> Retour en haut</a>
         </div>
     </footer>
 </body>
